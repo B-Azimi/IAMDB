@@ -302,10 +302,12 @@
     <div v-if="matchList" class="more_wrapper pb-[1.5em] w-full">
       <h2 class="more_title">More like this</h2>
       <div class="swiper_wrapper">
-        <swiper
+        <swiper  
+        :slides-offset-before="offset"       
           :slides-per-view="slideCount"
-          :loop="true"
-          class="match_List flex"
+          centered-slides="true"
+          loop="true"
+          class="flex"
         >
           <swiper-slide
             @click="routeHandler"
@@ -328,21 +330,26 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/css";
+import "swiper/css/bundle";
 import moreLike from "./moreLike.vue";
 import { ref, computed, watch } from "vue";
 import { useRoute, RouterLink } from "vue-router";
 import { useMovieStore } from "../stores/movies";
+const offset = ref(0);
 const slideCount = ref();
 function getWindowWidth() {
   if (window.innerWidth < 620) {
     slideCount.value = window.innerWidth / 245;
+    offset.value=-100
   } else if (window.innerWidth >= 621 && window.innerWidth < 830) {
     slideCount.value = window.innerWidth / 260;
+    offset.value=-170
   } else if (window.innerWidth >= 831 && window.innerWidth < 1130) {
     slideCount.value = window.innerWidth / 268;
+    offset.value=-170
   } else {
     slideCount.value = window.innerWidth / 275;
+    offset.value=-240
   }
 }
 window.onresize = getWindowWidth;
