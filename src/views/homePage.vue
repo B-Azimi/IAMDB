@@ -133,7 +133,7 @@
         </button>
       </form>
     </div>
-    <div v-if="matchList" class="search-result mt-5">
+    <div v-if="matchList" class="search-result mt-[1.25em]">
       <ul>
         <li v-for="movie in matchList" :key="movie.id">
           <movieList :movie="movie" />
@@ -253,54 +253,7 @@ const searchFunc = () => {
 .search-result li {
   @apply mb-[1.875em] w-full;
 }
-/* @media screen and (min-width: 841px) and (max-width: 940px) {
-  .homePage_container {
-    @apply w-screen min-h-[200vh] px-[7.5em];
-  }
-  .background_wrapper {
-    @apply w-[68.284em] h-[118.5em] mt-[-18.2em] ml-[-26.5em];
-    transform: perspective(1200px) rotateY(-15deg) rotateZ(19.5deg)
-      rotateX(5deg);
-  }
-  .images_wrapper {
-    @apply mb-[1.375em];
-  }
-  .background_images img {
-    @apply mr-[1.5em] w-[7.695em] h-[11.526em];
-  }
-  .title_wrapper {
-    @apply m-0 p-0  mt-[-85em] mb-[65em];
-  }
-  .title_wrapper h1 {
-    @apply text-[8em] font-bold self-end mb-[1em];
-  }
-  .search_wrapper {
-    @apply p-0 m-0  flex items-center justify-between gap-3 pb-[9.375em];
-  }
 
-  .desktop_input {
-    @apply block text-lg w-full py-[0.75em] px-[1.777778em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
-  }
-  .mobile_input {
-    @apply hidden;
-  }
-  .search_btn {
-    @apply w-fit m-0 py-[1.125em] px-[2em] self-stretch;
-  }
-  .search_text {
-    @apply text-[1.3125em] py-[0.095em] px-0 leading-[1.172em];
-  }
-  .search_icon {
-    @apply w-[1.3125em] h-[1.3125em];
-  }
-
-  .search-result {
-    @apply mt-[-45em];
-  }
-  .search-result li {
-    @apply m-0 mb-[0.625em];
-  }
-} */
 @media screen and (min-width: 941px) and (max-width: 1080px) {
   .homePage_container {
     @apply w-screen min-h-[250vh] px-[7.5em];
