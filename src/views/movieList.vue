@@ -9,7 +9,7 @@
     
         <div class="details ">
           <div class="name ">
-            <h5 class="movie-name">{{ movie.original_title }}</h5>
+            <h1 class="movie-name">{{ movie.original_title }}</h1>
           </div>
     <hr/>
           <div  class="more ">
@@ -20,13 +20,10 @@
             </div>
             <p v-if="movie.runtime" class="run-time">{{ movie.runtime }} min</p>
        <p v-else class="run-time">-- min</p>
-            <!-- <button class="add flex">
-              <p class="add-to-watchlist">Watchlist</p>
-            </button> -->
           </div>
           <hr/>
                <p  class="category ">
-              <ul class="movie_list ">
+              <ul class="category_list ">
                 <li  v-for="genre in movie.genres">{{ genre.name  }}&nbsp;&nbsp;  </li>
               </ul>
             </p>
@@ -108,13 +105,13 @@ if (props.movie) {
   @apply py-[0.125em];
 }
 .over_view{
-  @apply mt-[0.3125em] py-[0.125em] max-w-[22.5em] max-h-[7.9em] whitespace-pre-wrap overflow-hidden overflow-ellipsis;
+  @apply text-[0.875em] mt-[0.3125em] py-[0.125em] max-w-[22.5em] max-h-[7.9em] whitespace-pre-wrap overflow-hidden overflow-ellipsis;
 }
 .star_icon{
   @apply flex  gap-[0.3125em] items-center;
 }
-.movie_list{
-  @apply flex py-[0.1325] gap-[0.1325] flex-wrap;
+.category_list{
+  @apply text-[0.875em] flex py-[0.1325] gap-[0.1325] flex-wrap;
 }
 @media screen and (min-width: 941px) {
   .movieList_container{
