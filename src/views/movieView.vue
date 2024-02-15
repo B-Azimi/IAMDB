@@ -853,6 +853,9 @@ main {
 .expand {
   @apply w-[2em] h-[2em] m-auto;
 }
+.expanded_img {
+    border-radius: 0.325em;
+  }
 .expand_icon {
   @apply absolute top-[50%] left-[50%] text-center translate-x-[-50%] translate-y-[-50%];
   -ms-transform: translate(-50%, -50%);
@@ -867,11 +870,11 @@ main {
   @apply m-auto w-full h-full opacity-100;
 }
 .content {
-  @apply flex flex-col justify-center items-end fixed top-[10vh] left-[20vw] right-[20vw];
+  @apply flex flex-col justify-center items-end fixed top-[20vh] left-[10vw] right-[10vw];
 }
 
 .modal_close {
-  @apply cursor-pointer pointer-events-auto translate-x-[-0.3em] translate-y-[1.35em] inline-flex py-[0.275em] px-[0.275em] justify-center items-center  rounded-[100%] border border-solid border-[#eeebdd] w-fit h-fit backdrop-blur-sm;
+  @apply cursor-pointer pointer-events-auto translate-x-[-0.2em] translate-y-[1.35em] inline-flex py-[0.275em] px-[0.275em] justify-center items-center  rounded-[100%] border border-solid border-[#eeebdd] w-fit h-fit backdrop-blur-sm;
 }
 .modal_close img {
   @apply w-[0.5em] h-[0.5em] bg-inherit;
@@ -955,7 +958,9 @@ main {
   .image_container {
     @apply w-full h-full m-0;
   }
-
+.content {
+  @apply flex flex-col justify-center items-end fixed top-[10vh] left-[20vw] right-[20vw];
+}
   .modal_close {
     @apply w-[3.625em] h-[3.625em] translate-x-[-1.625em] translate-y-[4.875em] p-[1.25em] border-[0.125em] border-solid border-[#eeebdd];
   }
