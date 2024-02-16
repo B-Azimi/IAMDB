@@ -1,152 +1,168 @@
 <template>
   <div class="homePage_container">
-    <div class="background_wrapper">
-      <div class="background_images">
-        <div class="images_wrapper">
-          <img src="..\assets\images\search-img\ET.png" alt="backgroun image" />
-          <img src="..\assets\images\search-img\ET.png" alt="backgroun image" />
-          <img src="..\assets\images\search-img\ET.png" alt="backgroun image" />
-          <img
-            src="..\assets\images\search-img\dune.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\kombat.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\groot.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\harry.png"
-            alt="background image"
-          />
-        </div>
-        <div class="images_wrapper">
-          <img
-            src="..\assets\images\search-img\things.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\captan-A.png"
-            alt="background image"
-          />
-          <img src="..\assets\images\search-img\ET.png" alt="backgroun image" />
-          <img
-            src="..\assets\images\search-img\ring.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\doctor.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\batman.png"
-            alt="background image"
-          />
-        </div>
-        <div class="images_wrapper">
-          <img
-            src="..\assets\images\search-img\batman.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\matrix.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\lord.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\star-war.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\jurassic.png"
-            alt="background image"
-          />
-        </div>
-        <div class="images_wrapper">
-          <img
-            class="hidden_image hidden lg:block"
-            src="..\assets\images\search-img\mandalorian.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\mandalorian.png"
-            alt="background image"
-          />
-        </div>
-        <div class="images_wrapper">
-          <img
-            src="..\assets\images\search-img\dune.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\dune.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\dombeldure.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\things.png"
-            alt="background image"
-          />
-          <img
-            src="..\assets\images\search-img\ww84.png"
-            alt="background image"
-          />
+    <section>
+      <div class="background_wrapper">
+        <div class="background_images">
+          <div class="images_wrapper">
+            <img
+              src="..\assets\images\search-img\ET.png"
+              alt="backgroun image"
+            />
+            <img
+              src="..\assets\images\search-img\ET.png"
+              alt="backgroun image"
+            />
+            <img
+              src="..\assets\images\search-img\ET.png"
+              alt="backgroun image"
+            />
+            <img
+              src="..\assets\images\search-img\dune.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\kombat.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\groot.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\harry.png"
+              alt="background image"
+            />
+          </div>
+          <div class="images_wrapper">
+            <img
+              src="..\assets\images\search-img\things.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\captan-A.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\ET.png"
+              alt="backgroun image"
+            />
+            <img
+              src="..\assets\images\search-img\ring.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\doctor.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\batman.png"
+              alt="background image"
+            />
+          </div>
+          <div class="images_wrapper">
+            <img
+              src="..\assets\images\search-img\batman.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\matrix.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\lord.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\star-war.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\jurassic.png"
+              alt="background image"
+            />
+          </div>
+          <div class="images_wrapper">
+            <img
+              class="hidden_image hidden lg:block"
+              src="..\assets\images\search-img\mandalorian.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\mandalorian.png"
+              alt="background image"
+            />
+          </div>
+          <div class="images_wrapper">
+            <img
+              src="..\assets\images\search-img\dune.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\dune.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\dombeldure.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\things.png"
+              alt="background image"
+            />
+            <img
+              src="..\assets\images\search-img\ww84.png"
+              alt="background image"
+            />
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="title_wrapper">
-      <h1>IAMDB</h1>
-      <form
-        @submit.prevent="searchFunc"
-        class="search_wrapper"
-        action="search"
-        id="search_form"
-      >
-        <input
-          v-model="searchResults"
-          class="mobile_input"
-          type="text"
-          placeholder="Your favorite movie ..."
-        />
-        <input
-          v-model="searchResults"
-          class="desktop_input hidden ; ]"
-          type="text"
-          placeholder="Type the name of your favorite movie ..."
-          :disabled="isLoading"
-        />
-        <button class="search_btn">
-          <span class="search_text">Search</span
-          ><span class="search_icon"
-            ><img src="..\assets\images\Vector.svg" alt="search icon"
-          /></span>
-        </button>
-      </form>
-    </div>
-    <div v-if="matchList" class="search-result mt-[1.25em]">
-      <ul>
-        <li v-for="movie in matchList" :key="movie.id">
-          <movieList :movie="movie" />
-          <hr />
-        </li>
-      </ul>
-    </div>
+    </section>
+    <section>
+      <div class="title_wrapper">
+        <h1>IAMDB</h1>
+        <form
+          @submit.prevent="searchFunc"
+          class="search_wrapper"
+          action="search"
+          id="search_form"
+        >
+          <input
+            v-model="searchResults"
+            class="mobile_input"
+            type="text"
+            placeholder="Your favorite movie ..."
+          />
+          <input
+            v-model="searchResults"
+            class="desktop_input hidden ; ]"
+            type="text"
+            placeholder="Type the name of your favorite movie ..."
+            :disabled="isLoading"
+          />
+          <button class="search_btn">
+            <span class="search_text">Search</span
+            ><span class="search_icon"
+              ><img src="..\assets\images\Vector.svg" alt="search icon"
+            /></span>
+          </button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div v-if="matchList" class="search-result mt-[1.25em]">
+        <ul>
+          <li v-for="movie in matchList" :key="movie.id">
+            <movieList :movie="movie" />
+            <hr />
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
-// import { RouterLink } from "vue-router";
 import movieList from "@/views/movieList.vue";
 const matchList = ref([]);
 const movies = ref(null);
@@ -212,9 +228,9 @@ const searchFunc = () => {
   @apply mr-[0.725em] w-[3.323em] h-[5.3em] shrink-0 rounded-lg;
   box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.8), 1px 1px 0 rgba(0, 0, 0, 0.4);
 }
-@media screen and (min-width: 941px){
-  .hidden_image{
-    display: block
+@media screen and (min-width: 941px) {
+  .hidden_image {
+    display: block;
   }
 }
 .title_wrapper {
@@ -302,7 +318,7 @@ const searchFunc = () => {
     @apply m-0 mb-[0.625em];
   }
 }
-@media screen and (min-width: 1080px)  {
+@media screen and (min-width: 1080px) {
   .homePage_container {
     @apply w-screen min-h-[100vh] px-[7.5em];
   }
@@ -315,15 +331,12 @@ const searchFunc = () => {
     @apply block text-[1.125em] w-full py-[1em] px-[1.7777em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
   }
 }
-@media screen and (min-width: 1360px)  {
- 
+@media screen and (min-width: 1360px) {
   .images_wrapper {
     @apply mb-[1.5em];
   }
   .background_images img {
     @apply mr-[1.5em] w-[7.695em] h-[11.726em];
   }
-
 }
-
 </style>

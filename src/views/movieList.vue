@@ -3,7 +3,7 @@
     <div class="movieList_container ">
     
       <div v-if="movie" class="movie ">
-        <div class="poster w-[40%]">
+        <div class="poster">
           <img class="poster-img " :src="posterAddress" :alt="movie.title " />
         </div>
     
