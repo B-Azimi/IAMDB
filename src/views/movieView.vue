@@ -268,11 +268,7 @@
                     src="..\assets\images\x-modal-close.svg"
                     alt="close modal"
                 /></span>
-                <img
-                  class="expanded_img w-full"
-                  :src="modalSrc"
-                  alt="modal photo"
-                />
+                <img class="expanded_img" :src="modalSrc" alt="modal photo" />
               </div>
             </div>
           </div>
@@ -307,7 +303,7 @@
           :slides-per-view="slideCount"
           centered-slides="true"
           loop="true"
-          class="swiper "
+          class="swiper"
         >
           <swiper-slide
             @click="routeHandler"
@@ -861,7 +857,7 @@ main {
   @apply w-[2em] h-[2em] m-auto;
 }
 .expanded_img {
-  border-radius: 0.325em;
+  @apply w-full  rounded-[0.325em];
 }
 .expand_icon {
   @apply absolute top-[50%] left-[50%] text-center translate-x-[-50%] translate-y-[-50%];
@@ -877,7 +873,7 @@ main {
   @apply m-auto w-full h-full opacity-100;
 }
 .content {
-  @apply flex flex-col justify-center items-end fixed top-[20vh] left-[10vw] right-[10vw];
+  @apply flex flex-col justify-center items-end fixed top-[20vh] left-[10vw] right-[10vw] pointer-events-none;
 }
 
 .modal_close {
@@ -893,10 +889,10 @@ main {
   @apply w-full flex flex-col justify-center self-stretch text-[1.5em] px-[0.625em] font-bold mb-[1em] leading-[50px];
 }
 .swiper_wrapper {
-  @apply w-full pl-[0.9375em] min-h-[50vh] ;
+  @apply w-full pl-[0.9375em] min-h-[50vh];
 }
-.swiper{
-@apply flex  snap-mandatory snap-x;
+.swiper {
+  @apply flex  snap-mandatory snap-x;
 }
 .swiper_slide {
   @apply flex gap-[1.5em] w-[14.375em] h-[24.1875em] mb-[1.875em] mr-[0.9375em] snap-always snap-start;
@@ -979,13 +975,16 @@ main {
     height: 1.125em;
   }
   .expanded_img {
-    border-radius: 0.75em;
+    @apply w-full rounded-[0.325em];
   }
+  .content {
+  @apply top-[5vh] left-[20vw] right-[20vw] h-[39.5em];
+}
   .more_title {
     @apply text-[1.75em] m-0 py-0 px-[4.28571429em];
   }
   .swiper_slide {
-    @apply flex gap-[1.5em] w-[17.1875em] min-h-[45em] mb-[1.875em] mr-[1.5em] ;
+    @apply flex gap-[1.5em] w-[17.1875em] min-h-[45em] mb-[1.875em] mr-[1.5em];
   }
   .swiper_wrapper {
     width: 100%;
@@ -995,7 +994,6 @@ main {
 }
 
 @media screen and (min-width: 1360px) {
-
   .photo_item {
     @apply w-[17.5%];
   }
@@ -1003,7 +1001,7 @@ main {
     @apply mb-[0.857142857em];
   }
   .swiper_slide {
-    @apply  min-h-[28.375em]  ;
+    @apply min-h-[28.375em];
   }
 }
 </style>

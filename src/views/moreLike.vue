@@ -1,5 +1,5 @@
 <template>
-  <div v-if="srcAddress" class="movie_wrapper w-full ">
+  <div v-if="srcAddress" class="movie_wrapper w-full">
     <div class="posters">
       <div class="poster_wrapper">
         <div class="tooltip-wrapper">
@@ -67,14 +67,14 @@ for (let index = 0; index < props.favList.length; index++) {
 .posters {
   @apply w-full h-auto flex flex-col items-center justify-center;
 }
-.poster_wrapper{
-  @apply relative w-full h-auto ;
+.poster_wrapper {
+  @apply relative w-full h-auto;
 }
 .poster-img {
-  @apply block w-full h-full rounded-[0.75em] ;
+  @apply block w-full h-full rounded-[0.75em];
 }
 .details {
-  @apply w-full flex justify-between items-center py-[0.75em] ;
+  @apply w-full flex justify-between items-center py-[0.75em];
 }
 .rating {
   @apply flex py-0 px-[0.75em] justify-end items-center gap-[0.375em];
@@ -93,8 +93,8 @@ for (let index = 0; index < props.favList.length; index++) {
   text-align: center;
 }
 @media screen and (min-width: 941px) {
-.details {
-  @apply text-[16px] py-[0.75em] ;
-}
+  .details {
+    @apply text-[16px] py-[0.75em];
+  }
 }
 </style>
