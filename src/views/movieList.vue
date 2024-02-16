@@ -89,9 +89,6 @@ if (props.movie) {
 }
 }
 
-/* .poster-img{
-  @apply h-full w-[10em] object-cover rounded-lg;
-} */
 .details{
   @apply w-[60%] flex flex-col ;
 }

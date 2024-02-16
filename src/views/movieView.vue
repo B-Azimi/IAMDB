@@ -10,7 +10,7 @@
             <img :src="srcAddress" alt="poster image" />
           </div>
           <div v-if="progressPercent" class="rating">
-            <div id="progress" class="progress-bar ">
+            <div id="progress" class="progress-bar">
               <progress
                 value=""
                 min="0"
@@ -60,7 +60,7 @@
                 </span>
                 <span
                   ><img
-                    class="trailer_img"
+                    class="trailer_icon"
                     src="..\assets\images\play1.svg"
                     alt="play icon" /></span
               ></a>
@@ -204,7 +204,7 @@
           </div>
         </div>
 
-        <div  class="actors_wrapper">
+        <div class="actors_wrapper">
           <h2>Cast & Crew</h2>
 
           <ul v-if="actorsList" class="actors_list">
@@ -302,12 +302,12 @@
     <div v-if="matchList" class="more_wrapper pb-[1.5em] w-full">
       <h2 class="more_title">More like this</h2>
       <div class="swiper_wrapper">
-        <swiper  
-        :slides-offset-before="offset"       
+        <swiper
+          :slides-offset-before="offset"
           :slides-per-view="slideCount"
           centered-slides="true"
           loop="true"
-          class="flex"
+          class="swiper "
         >
           <swiper-slide
             @click="routeHandler"
@@ -340,16 +340,16 @@ const slideCount = ref();
 function getWindowWidth() {
   if (window.innerWidth < 620) {
     slideCount.value = window.innerWidth / 245;
-    offset.value=-100
+    offset.value = -100;
   } else if (window.innerWidth >= 621 && window.innerWidth < 830) {
     slideCount.value = window.innerWidth / 260;
-    offset.value=-170
+    offset.value = -170;
   } else if (window.innerWidth >= 831 && window.innerWidth < 1130) {
     slideCount.value = window.innerWidth / 268;
-    offset.value=-170
+    offset.value = -170;
   } else {
     slideCount.value = window.innerWidth / 275;
-    offset.value=-240
+    offset.value = -240;
   }
 }
 window.onresize = getWindowWidth;
@@ -681,7 +681,7 @@ main {
 .trailer_text {
   @apply leading-[1.25em] mr-[0.75em];
 }
-.trailer_img {
+.trailer_icon {
   @apply w-[1.125em] h-[1.125em];
 }
 .fave_btn_wrapper {
@@ -740,7 +740,7 @@ main {
 }
 
 #share_button:checked ~ .sm_list a:nth-child(6) {
-  background-color: #348ef5;
+  background-color: #0088cc;
 }
 
 /* Hovering Effects */
@@ -770,7 +770,7 @@ main {
 }
 
 #share_button:checked ~ .sm_list a:nth-child(6):hover {
-  color: #1077ec;
+  color: #0088cc;
   background-color: #fff;
 }
 
@@ -861,8 +861,8 @@ main {
   @apply w-[2em] h-[2em] m-auto;
 }
 .expanded_img {
-    border-radius: 0.325em;
-  }
+  border-radius: 0.325em;
+}
 .expand_icon {
   @apply absolute top-[50%] left-[50%] text-center translate-x-[-50%] translate-y-[-50%];
   -ms-transform: translate(-50%, -50%);
@@ -890,13 +890,16 @@ main {
   overflow-x: scroll;
 }
 .more_title {
-  @apply w-full flex flex-col justify-center self-stretch text-[1.5em] px-[0.625em] font-bold h-[2.08333333em] mb-[1em] leading-[208.333%];
+  @apply w-full flex flex-col justify-center self-stretch text-[1.5em] px-[0.625em] font-bold mb-[1em] leading-[50px];
 }
 .swiper_wrapper {
-  @apply w-full pl-[0.9375em] min-h-[50vh];
+  @apply w-full pl-[0.9375em] min-h-[50vh] ;
+}
+.swiper{
+@apply flex  snap-mandatory snap-x;
 }
 .swiper_slide {
-  @apply flex gap-[1.5em] w-[14.375em] h-[24.1875em] mb-[1.875em] mr-[0.9375em] snap-start;
+  @apply flex gap-[1.5em] w-[14.375em] h-[24.1875em] mb-[1.875em] mr-[0.9375em] snap-always snap-start;
 }
 
 @media screen and (min-width: 941px) {
@@ -913,7 +916,7 @@ main {
     width: 42%;
   }
   .left_col {
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-[1.5em];
   }
   .trailer_btn {
     @apply h-[3.8125em] px-[2em] py-[1.125em] flex justify-center items-center bg-play_red rounded-[6.25em];
@@ -924,7 +927,7 @@ main {
   .trailer_text {
     @apply p-0 m-0   text-[1.3125em] leading-[1.172em];
   }
-  .trailer_img {
+  .trailer_icon {
     @apply w-[1.3125em] h-[1.3125em];
   }
   .share_btn {
@@ -965,9 +968,9 @@ main {
   .image_container {
     @apply w-full h-full m-0;
   }
-.content {
-  @apply flex flex-col justify-center items-end fixed top-[10vh] left-[20vw] right-[20vw];
-}
+  .content {
+    @apply flex flex-col justify-center items-end fixed top-[10vh] left-[20vw] right-[20vw];
+  }
   .modal_close {
     @apply w-[3.625em] h-[3.625em] translate-x-[-1.625em] translate-y-[4.875em] p-[1.25em] border-[0.125em] border-solid border-[#eeebdd];
   }
@@ -982,7 +985,7 @@ main {
     @apply text-[1.75em] m-0 py-0 px-[4.28571429em];
   }
   .swiper_slide {
-    @apply flex gap-[1.5em] w-[17.1875em] min-h-[45em] mb-[1.875em] mr-[1.5em] snap-start;
+    @apply flex gap-[1.5em] w-[17.1875em] min-h-[45em] mb-[1.875em] mr-[1.5em] ;
   }
   .swiper_wrapper {
     width: 100%;
@@ -992,75 +995,15 @@ main {
 }
 
 @media screen and (min-width: 1360px) {
-  .movie_infos {
-    @apply py-0 px-[7.5em] mt-[29.44em] flex items-start  justify-between mb-[3.875em];
-  }
-  .movie_infos > div {
-    width: 23%;
-  }
-  .movie_infos > div:nth-child(2) {
-    width: 42%;
-  }
-  .left_col {
-    @apply flex flex-col gap-6;
-  }
-  .trailer_btn {
-    @apply px-[2em] py-[1.125em] flex justify-center items-center bg-play_red rounded-[6.25em];
-  }
-  .trailer_txt_wrapper {
-    @apply flex flex-nowrap justify-center items-center  py-[0.09524em] mr-[0.5715em];
-  }
-  .trailer_text {
-    @apply p-0 m-0   text-[1.3125em] leading-[1.172em];
-  }
-  .trailer_img {
-    @apply w-[1.3125em] h-[1.3125em];
-  }
-  .cover-img_wrapper {
-    height: 41.94em;
-  }
 
-  .photos_wrapper {
-    @apply py-0 px-[7.5em] mb-[3.125em];
-  }
-  .photos_wrapper h2 {
-    @apply text-[1.75em] font-bold h-[1.78571429em] mb-[0.4286em] leading-[208.333%];
-  }
-  .info_wrapper {
-    padding-top: 3.125em;
-  }
-  .showAll_wrapper {
-    @apply w-fit self-start;
-  }
-  .photo_list {
-    @apply w-full flex flex-wrap items-center justify-start;
-  }
   .photo_item {
-    @apply w-[17.5%] mt-[1.5em] mr-[1.5em];
-  }
-  .image_container {
-    @apply w-full h-full m-0;
-  }
-
-  .modal_close {
-    @apply w-[3.625em] h-[3.625em] translate-x-[-1.625em] translate-y-[4.875em] p-[1.25em] border-[0.125em] border-solid border-[#eeebdd];
-  }
-  .modal_close img {
-    width: 1.125em;
-    height: 1.125em;
-  }
-  .expanded_img {
-    border-radius: 0.75em;
+    @apply w-[17.5%];
   }
   .more_title {
-    @apply mb-[0.857142857em] text-[1.75em] m-0 py-0 px-[4.28571429em];
+    @apply mb-[0.857142857em];
   }
   .swiper_slide {
-    @apply flex gap-[1.5em] w-[17.1875em] min-h-[28.375em] mb-[1.875em] mr-[1.5em] snap-start;
-  }
-  .swiper_wrapper {
-    width: 100%;
-    padding: 0;
+    @apply  min-h-[28.375em]  ;
   }
 }
 </style>

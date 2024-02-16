@@ -233,10 +233,10 @@ const searchFunc = () => {
   @apply w-full py-[0.75em] px-[2em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
 }
 .search_btn {
-  @apply mt-[0.75em] flex gap-3 py-[0.75em] px-[1.5em] justify-center items-center rounded-[100px] bg-[#CE1212] w-full;
+  @apply mt-[0.75em] flex gap-[0.75em] py-[0.75em] px-[1.5em] justify-center items-center rounded-[100px] bg-[#CE1212] w-full;
 }
 .search_text {
-  @apply text-[#EEEBDD] leading-[20px];
+  @apply text-[#EEEBDD] leading-[1.25em];
 }
 .search_icon {
   @apply w-[1.125em] h-[1.125em];
@@ -254,7 +254,7 @@ const searchFunc = () => {
   @apply mb-[1.875em] w-full;
 }
 
-@media screen and (min-width: 941px) and (max-width: 1080px) {
+@media screen and (min-width: 941px) {
   .homePage_container {
     @apply w-screen min-h-[250vh] px-[7.5em];
   }
@@ -276,7 +276,7 @@ const searchFunc = () => {
     @apply text-[6em] font-bold self-end mb-[1em];
   }
   .search_wrapper {
-    @apply p-0 m-0 mt-[1.5em]  flex items-center justify-between gap-3 pb-[9.375em];
+    @apply p-0 m-0 mt-[1.5em]  flex items-center justify-between gap-[0.75em] pb-[9.375em];
   }
 
   .desktop_input {
@@ -302,198 +302,28 @@ const searchFunc = () => {
     @apply m-0 mb-[0.625em];
   }
 }
-@media screen and (min-width: 1080px) and (max-width: 1359px) {
+@media screen and (min-width: 1080px)  {
   .homePage_container {
     @apply w-screen min-h-[100vh] px-[7.5em];
   }
-  .background_wrapper {
-    @apply w-[68.284em] h-[118.5em] mt-[-18.2em] ml-[-26.5em];
-    transform: perspective(1200px) rotateY(-15deg) rotateZ(19.5deg)
-      rotateX(5deg);
-  }
-  .images_wrapper {
-    @apply mb-[1.375em];
-  }
-  .background_images img {
-    @apply mr-[1.5em] w-[7.695em] h-[11.526em];
-  }
+
   .title_wrapper {
     @apply m-0 p-0  mt-[-85em] mb-[65em];
   }
-  .title_wrapper h1 {
-    @apply text-[6em] font-bold self-end mb-[1em];
-  }
-  .search_wrapper {
-    @apply p-0 m-0 mt-[1.5em] flex items-center justify-between gap-3 pb-[9.375em];
-  }
-  .search_wrapper button {
-    @apply w-fit py-[1.125em] px-[2em] m-0;
-  }
+
   .desktop_input {
     @apply block text-[1.125em] w-full py-[1em] px-[1.7777em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
   }
-  .mobile_input {
-    @apply hidden;
-  }
-  .search_btn {
-    @apply py-[1.125em] px-[2em];
-  }
-  .search_text {
-    @apply text-[1.3125em] py-[0.095em] px-0 leading-[1.172em];
-  }
-  .search_icon {
-    @apply w-[1.3125em] h-[1.3125em];
-  }
-
-  .search-result {
-    @apply mt-[-45em];
-  }
-  .search-result li {
-    @apply m-0 mb-[0.625em];
-  }
 }
-@media screen and (min-width: 1360px) and (max-width: 1580px) {
-  .homePage_container {
-    @apply min-h-[100vh] px-[7.5em];
-  }
-  .background_wrapper {
-    @apply w-[68.284em] h-[118.5em] mt-[-18.2em] ml-[-26.5em];
-    transform: perspective(1200px) rotateY(-15deg) rotateZ(19.5deg)
-      rotateX(5deg);
-  }
+@media screen and (min-width: 1360px)  {
+ 
   .images_wrapper {
     @apply mb-[1.5em];
   }
   .background_images img {
     @apply mr-[1.5em] w-[7.695em] h-[11.726em];
   }
-  .title_wrapper {
-    @apply m-0 p-0 mt-[-84em] mb-[65em];
-  }
-  .title_wrapper h1 {
-    @apply text-[6em] font-bold self-end mb-[1em];
-  }
-  .search_wrapper {
-    @apply p-0 m-0 mt-[1.5em] flex items-center justify-between gap-3 pb-[9.375em];
-  }
 
-  .desktop_input {
-    @apply block text-[1.125em] w-full py-[1em] px-[1.7777778em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
-  }
-  .search_btn {
-    @apply w-fit m-0 py-[1.125em] px-[2em];
-  }
-  .mobile_input {
-    display: none;
-  }
-  .search_text {
-    @apply text-[1.3125em] py-[0.095em] px-0 leading-[1.172em];
-  }
-  .search_icon {
-    @apply w-[1.3125em] h-[1.3125em];
-  }
-
-  .search-result {
-    @apply mt-[-45em];
-  }
-  .search-result li {
-    @apply m-0 mb-[0.625em];
-  }
 }
-@media screen and (min-width: 1581px) and (max-width: 1880px) {
-  .homePage_container {
-    @apply min-h-[100vh] px-[7.5em];
-  }
-  .background_wrapper {
-    @apply w-[68.284em] h-[118.5em] mt-[-18.2em] ml-[-26.5em];
-    transform: perspective(1200px) rotateY(-15deg) rotateZ(19.5deg)
-      rotateX(5deg);
-  }
-  .images_wrapper {
-    @apply mb-[1.375em];
-  }
-  .background_images img {
-    @apply mr-[1.5em] w-[7.695em] h-[11.526em];
-  }
-  .title_wrapper {
-    @apply m-0 p-0  mt-[-85em] mb-[65em];
-  }
-  .title_wrapper h1 {
-    @apply text-[6em] font-bold self-end mb-[1em];
-  }
-  .search_wrapper {
-    @apply p-0 m-0 mt-[1.5em] flex items-center justify-between gap-3 pb-[9.375em];
-  }
 
-  .desktop_input {
-    @apply block text-[1.125em] w-full py-[1em] px-[1.7777778em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
-  }
-  .search_btn {
-    @apply w-fit m-0 py-[1.125em] px-[2em];
-  }
-  .mobile_input {
-    display: none;
-  }
-  .search_text {
-    @apply text-[1.3125em] py-[0.095em] px-0 leading-[1.172em];
-  }
-  .search_icon {
-    @apply w-[1.3125em] h-[1.3125em];
-  }
-
-  .search-result {
-    @apply mt-[-45em];
-  }
-  .search-result li {
-    @apply m-0 mb-[0.625em];
-  }
-}
-@media screen and (min-width: 1881px) {
-  .homePage_container {
-    @apply min-h-[100vh] px-[7.5em];
-  }
-  .background_wrapper {
-    @apply w-[68.284em] h-[118.5em] mt-[-18.2em] ml-[-26.5em];
-    transform: perspective(1200px) rotateY(-15deg) rotateZ(19.5deg)
-      rotateX(5deg);
-  }
-  .images_wrapper {
-    @apply mb-[1.375em];
-  }
-  .background_images img {
-    @apply mr-[1.5em] w-[7.695em] h-[11.526em];
-  }
-  .title_wrapper {
-    @apply m-0 p-0  mt-[-85em] mb-[65em];
-  }
-  .title_wrapper h1 {
-    @apply text-[6em] font-bold self-end mb-[1em];
-  }
-  .search_wrapper {
-    @apply p-0 m-0 mt-[1.5em] flex items-center justify-between gap-3 pb-[9.375em];
-  }
-
-  .desktop_input {
-    @apply block text-[1.125em] w-full py-[1em] px-[1.7777778em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
-  }
-  .search_btn {
-    @apply w-fit m-0 py-[1.125em] px-[2em];
-  }
-  .mobile_input {
-    display: none;
-  }
-  .search_text {
-    @apply text-[1.3125em] py-[0.095em] px-0 leading-[1.172em];
-  }
-  .search_icon {
-    @apply w-[1.3125em] h-[1.3125em];
-  }
-
-  .search-result {
-    @apply mt-[-45em];
-  }
-  .search-result li {
-    @apply m-0 mb-[0.625em];
-  }
-}
 </style>
