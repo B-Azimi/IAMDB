@@ -161,6 +161,7 @@
             <hr />
           </li>
         </ul>
+        <pageNotFind v-show="showNotFound" />
       </div>
     </section>
   </div>
@@ -169,10 +170,12 @@
 <script setup>
 import { ref } from "vue";
 import movieList from "@/views/movieList.vue";
+import pageNotFind from "@/views/pageNotFind.vue";
 const matchList = ref([]);
 const movies = ref(null);
 const searchText = ref("");
 const isLoading = ref(false);
+const showNotFound = ref(false);
 const options = {
   method: "GET",
   headers: {
@@ -184,6 +187,7 @@ const options = {
 const searchFunc = () => {
   const fetchMovie = async (name) => {
     isLoading.value = true;
+    showNotFound.value = false;
     searchText.value = "Searching ...";
     const response = await fetch(
       `https://api.themoviedb.org/3/search/movie?query=${name}&include_adult=false&language=en-US&page=1`,
@@ -207,6 +211,7 @@ const searchFunc = () => {
     } else {
       console.log(movies.value.Error);
       searchText.value = `Not Found, please search agin`;
+      showNotFound.value = true;
       function MyMessage() {
         isLoading.value = false;
         searchText.value = "";

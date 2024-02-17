@@ -869,7 +869,7 @@ main {
   display: none;
 }
 .modal_overlay {
-  @apply fixed top-0 left-0 w-screen h-screen bg-[#0b0b0b80] z-[9999] backdrop-blur-[2px];
+  @apply fixed top-0 left-0 w-screen h-screen bg-[#0b0b0b80] z-[9999] backdrop-blur-[6px];
 }
 .modal {
   @apply m-auto w-full h-full opacity-100;
@@ -939,6 +939,12 @@ main {
   }
   .fave_icon {
     @apply w-[1.3125em] h-[1.3125em];
+  }
+  .details_title h3 {
+    @apply text-[1.125em] min-w-[9.5em];
+  }
+  .details {
+    @apply w-[50%] text-[1em];
   }
   .cover-img_wrapper {
     height: 41.94em;
