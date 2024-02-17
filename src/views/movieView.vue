@@ -674,6 +674,9 @@ main {
 .trailer_btn {
   @apply h-[2.75em] px-[1.5em] py-[0.75em] flex justify-center items-center bg-play_red rounded-[6.25em];
 }
+.trailer_btn:hover{
+  background-color: #8e0d0d;
+}
 .trailer_text {
   @apply leading-[1.25em] mr-[0.75em];
 }

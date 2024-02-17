@@ -127,6 +127,7 @@
           id="search_form"
         >
           <input
+            :disabled="isLoading"
             v-model="searchResults"
             class="mobile_input"
             type="text"
@@ -134,12 +135,12 @@
           />
           <input
             v-model="searchResults"
-            class="desktop_input hidden ; ]"
+            class="desktop_input hidden"
             type="text"
             placeholder="Type the name of your favorite movie ..."
             :disabled="isLoading"
           />
-          <button class="search_btn">
+          <button :disabled="isLoading" class="search_btn">
             <span class="search_text">Search</span
             ><span class="search_icon"
               ><img src="..\assets\images\Vector.svg" alt="search icon"
@@ -199,6 +200,7 @@ const searchFunc = () => {
         matchList.value = await Promise.all(promises);
 
         isLoading.value = false;
+        searchResults.value = "";
       }
     } else {
       console.log(movies.value.Error);
@@ -249,7 +251,10 @@ const searchFunc = () => {
   @apply w-full py-[0.75em] px-[2em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
 }
 .search_btn {
-  @apply mt-[0.75em] flex gap-[0.75em] py-[0.75em] px-[1.5em] justify-center items-center rounded-[100px] bg-[#CE1212] w-full;
+  @apply mt-[0.75em] flex gap-[0.75em] py-[0.75em] px-[1.5em] justify-center items-center rounded-[100px] bg-[#CE1212] w-full ;
+}
+.search_btn:hover{
+  background-color: #8e0d0d;
 }
 .search_text {
   @apply text-[#EEEBDD] leading-[1.25em];
