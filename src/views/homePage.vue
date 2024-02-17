@@ -128,19 +128,23 @@
         >
           <input
             :disabled="isLoading"
-            v-model="searchResults"
+            v-model="searchText"
             class="mobile_input"
             type="text"
             placeholder="Your favorite movie ..."
           />
           <input
-            v-model="searchResults"
+            v-model="searchText"
             class="desktop_input hidden"
             type="text"
             placeholder="Type the name of your favorite movie ..."
             :disabled="isLoading"
           />
-          <button :disabled="isLoading" class="search_btn">
+          <button
+            :unselectable="isLoading"
+            :disabled="isLoading"
+            class="search_btn"
+          >
             <span class="search_text">Search</span
             ><span class="search_icon"
               ><img src="..\assets\images\Vector.svg" alt="search icon"
@@ -167,7 +171,7 @@ import { ref } from "vue";
 import movieList from "@/views/movieList.vue";
 const matchList = ref([]);
 const movies = ref(null);
-const searchResults = ref("");
+const searchText = ref("");
 const isLoading = ref(false);
 const options = {
   method: "GET",
@@ -180,6 +184,7 @@ const options = {
 const searchFunc = () => {
   const fetchMovie = async (name) => {
     isLoading.value = true;
+    searchText.value = "Searching ...";
     const response = await fetch(
       `https://api.themoviedb.org/3/search/movie?query=${name}&include_adult=false&language=en-US&page=1`,
       options
@@ -200,14 +205,19 @@ const searchFunc = () => {
         matchList.value = await Promise.all(promises);
 
         isLoading.value = false;
-        searchResults.value = "";
+        searchText.value = "";
       }
     } else {
       console.log(movies.value.Error);
-      searchResults.value = `${movies.value.Error}`;
+      searchText.value = `Not Found, please search agin`;
+      function MyMessage() {
+        isLoading.value = false;
+        searchText.value = "";
+      }
+      setTimeout(MyMessage, 2000);
     }
   };
-  fetchMovie(searchResults.value);
+  fetchMovie(searchText.value);
 };
 </script>
 
@@ -251,9 +261,9 @@ const searchFunc = () => {
   @apply w-full py-[0.75em] px-[2em] border-solid border-[1px] border-[#EEEBDD] rounded-[100px] bg-inherit;
 }
 .search_btn {
-  @apply mt-[0.75em] flex gap-[0.75em] py-[0.75em] px-[1.5em] justify-center items-center rounded-[100px] bg-[#CE1212] w-full ;
+  @apply mt-[0.75em] flex gap-[0.75em] py-[0.75em] px-[1.5em] justify-center items-center rounded-[100px] bg-[#CE1212] w-full;
 }
-.search_btn:hover{
+.search_btn:hover {
   background-color: #8e0d0d;
 }
 .search_text {
