@@ -892,10 +892,10 @@ main {
   @apply w-full pl-[0.9375em] min-h-[50vh];
 }
 .swiper {
-  @apply flex  snap-mandatory snap-x;
+  @apply flex  ;
 }
 .swiper_slide {
-  @apply flex gap-[1.5em] w-[14.375em] h-[24.1875em] mb-[1.875em] mr-[0.9375em] snap-always snap-start;
+  @apply flex gap-[1.5em] w-[14.375em] h-[24.1875em] mb-[1.875em] mr-[0.9375em] snap-start;
 }
 
 @media screen and (min-width: 941px) {
