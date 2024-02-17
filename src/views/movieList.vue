@@ -75,10 +75,15 @@ if (props.movie) {
   @apply w-full px-[1em] m-auto;
 }
 .movie{
-@apply w-full h-[16.25em]  flex gap-[1em] justify-between p-[0.625em] items-center w-full;
+@apply w-full h-[16.25em]  flex gap-[1em] justify-between p-[0.625em] items-center;
 }
 .poster{
   @apply w-[40%] h-full py-[0.25em];
+}
+@media screen and (min-width: 541px) {
+.poster{
+  @apply w-auto h-full py-[0.25em];
+}
 }
 .poster-img{
   @apply min-w-[100px] h-full w-full m-auto object-cover rounded-lg;
@@ -120,10 +125,10 @@ if (props.movie) {
   }
 
 .poster{
-  @apply w-[40%] h-[25em] px-[5%] py-[0.25em];
+  @apply w-auto h-[25em] px-[5%] py-[0.25em];
 }
 .details{
-  @apply text-[1.125em] w-[55%] gap-[0.625em] flex flex-col ;
+  @apply text-[1.125em] w-[65%] gap-[0.625em] flex flex-col ;
 }
 .more{
   @apply text-[1.125em];
@@ -135,7 +140,7 @@ if (props.movie) {
   @apply py-[0.125em];
 }
 .over_view{
-  @apply mt-[0.3125em] w-[22.5em] max-h-[11.8125em] overflow-hidden overflow-ellipsis whitespace-normal;
+  @apply mt-[0.3125em] w-[24.5em] max-h-[11.8125em] overflow-hidden overflow-ellipsis whitespace-normal;
 }
 }
 </style>
