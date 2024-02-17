@@ -190,7 +190,6 @@ const searchFunc = () => {
       options
     );
     movies.value = await response.json();
-
     if (movies.value.total_results) {
       if (movies.value.results) {
         const ids = movies.value.results.map((item) => item.id);
@@ -201,9 +200,7 @@ const searchFunc = () => {
           );
           return await res.json();
         });
-
         matchList.value = await Promise.all(promises);
-
         isLoading.value = false;
         searchText.value = "";
       }
