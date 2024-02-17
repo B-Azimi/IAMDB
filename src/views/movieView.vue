@@ -299,6 +299,7 @@
       <h2 class="more_title">More like this</h2>
       <div class="swiper_wrapper">
         <swiper
+        :slides-offset-before="offset"
           :slides-per-view="slideCount"
           :centered-slides="true"
           :loop="true"
@@ -335,10 +336,10 @@ const slideCount = ref();
 function getWindowWidth() {
   if (window.innerWidth < 620) {
     slideCount.value = window.innerWidth / 245;
-    offset.value = -100;
+    offset.value = -78;
   } else if (window.innerWidth >= 621 && window.innerWidth < 830) {
     slideCount.value = window.innerWidth / 260;
-    offset.value = -170;
+    offset.value = -88;
   } else if (window.innerWidth >= 831 && window.innerWidth < 1130) {
     slideCount.value = window.innerWidth / 268;
     offset.value = -170;
