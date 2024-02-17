@@ -978,7 +978,7 @@ main {
     @apply w-full rounded-[0.325em];
   }
   .content {
-    @apply top-[5vh] left-[20vw] right-[20vw] h-[39.5em];
+    @apply top-[1vh] left-[20vw] right-[20vw] h-[39.5em];
   }
   .more_title {
     @apply text-[1.75em] m-0 py-0 px-[4.28571429em];
