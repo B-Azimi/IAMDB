@@ -299,10 +299,9 @@
       <h2 class="more_title">More like this</h2>
       <div class="swiper_wrapper">
         <swiper
-          :slides-offset-before="offset"
           :slides-per-view="slideCount"
-          centered-slides="true"
-          loop="true"
+          :centered-slides="true"
+          :loop="true"
           class="swiper"
         >
           <swiper-slide
@@ -674,7 +673,7 @@ main {
 .trailer_btn {
   @apply h-[2.75em] px-[1.5em] py-[0.75em] flex justify-center items-center bg-play_red rounded-[6.25em];
 }
-.trailer_btn:hover{
+.trailer_btn:hover {
   background-color: #8e0d0d;
 }
 .trailer_text {
@@ -895,7 +894,7 @@ main {
   @apply w-full pl-[0.9375em] min-h-[50vh];
 }
 .swiper {
-  @apply flex  ;
+  @apply flex;
 }
 .swiper_slide {
   @apply flex gap-[1.5em] w-[14.375em] h-[24.1875em] mb-[1.875em] mr-[0.9375em] snap-start;
