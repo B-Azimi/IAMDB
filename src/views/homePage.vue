@@ -6,15 +6,15 @@
           <div class="images_wrapper">
             <img
               src="..\assets\images\search-img\ET.webp"
-              alt="backgroun image"
+              alt="background image"
             />
             <img
               src="..\assets\images\search-img\ET.webp"
-              alt="backgroun image"
+              alt="background image"
             />
             <img
               src="..\assets\images\search-img\ET.webp"
-              alt="backgroun image"
+              alt="background image"
             />
             <img
               src="..\assets\images\search-img\dune.webp"
@@ -44,7 +44,7 @@
             />
             <img
               src="..\assets\images\search-img\ET.webp"
-              alt="backgroun image"
+              alt="background image"
             />
             <img
               src="..\assets\images\search-img\ring.webp"
