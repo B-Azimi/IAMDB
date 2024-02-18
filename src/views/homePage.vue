@@ -5,112 +5,112 @@
         <div class="background_images">
           <div class="images_wrapper">
             <img
-              src="..\assets\images\search-img\ET.png"
+              src="..\assets\images\search-img\ET.webp"
               alt="backgroun image"
             />
             <img
-              src="..\assets\images\search-img\ET.png"
+              src="..\assets\images\search-img\ET.webp"
               alt="backgroun image"
             />
             <img
-              src="..\assets\images\search-img\ET.png"
+              src="..\assets\images\search-img\ET.webp"
               alt="backgroun image"
             />
             <img
-              src="..\assets\images\search-img\dune.png"
+              src="..\assets\images\search-img\dune.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\kombat.png"
+              src="..\assets\images\search-img\kombat.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\groot.png"
+              src="..\assets\images\search-img\groot.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\harry.png"
+              src="..\assets\images\search-img\harry.webp"
               alt="background image"
             />
           </div>
           <div class="images_wrapper">
             <img
-              src="..\assets\images\search-img\things.png"
+              src="..\assets\images\search-img\things.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\captan-A.png"
+              src="..\assets\images\search-img\captan-A.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\ET.png"
+              src="..\assets\images\search-img\ET.webp"
               alt="backgroun image"
             />
             <img
-              src="..\assets\images\search-img\ring.png"
+              src="..\assets\images\search-img\ring.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\doctor.png"
+              src="..\assets\images\search-img\doctor.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\batman.png"
+              src="..\assets\images\search-img\batman.webp"
               alt="background image"
             />
           </div>
           <div class="images_wrapper">
             <img
-              src="..\assets\images\search-img\batman.png"
+              src="..\assets\images\search-img\batman.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\matrix.png"
+              src="..\assets\images\search-img\matrix.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\lord.png"
+              src="..\assets\images\search-img\lord.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\star-war.png"
+              src="..\assets\images\search-img\star-war.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\jurassic.png"
+              src="..\assets\images\search-img\jurassic.webp"
               alt="background image"
             />
           </div>
           <div class="images_wrapper">
             <img
               class="hidden_image hidden lg:block"
-              src="..\assets\images\search-img\mandalorian.png"
+              src="..\assets\images\search-img\mandalorian.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\mandalorian.png"
+              src="..\assets\images\search-img\mandalorian.webp"
               alt="background image"
             />
           </div>
           <div class="images_wrapper">
             <img
-              src="..\assets\images\search-img\dune.png"
+              src="..\assets\images\search-img\dune.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\dune.png"
+              src="..\assets\images\search-img\dune.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\dombeldure.png"
+              src="..\assets\images\search-img\dombeldure.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\things.png"
+              src="..\assets\images\search-img\things.webp"
               alt="background image"
             />
             <img
-              src="..\assets\images\search-img\ww84.png"
+              src="..\assets\images\search-img\ww84.webp"
               alt="background image"
             />
           </div>
