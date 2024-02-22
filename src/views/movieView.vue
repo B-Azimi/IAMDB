@@ -506,6 +506,7 @@ const routeHandler = () => {
         );
       };
       fetchCredits();
+      window.scrollTo(0, 0);
     },
     { immediate: true }
   );
@@ -596,6 +597,7 @@ const handleFetch = () => {
     };
     fetchMovies(movieId.value);
   };
+  window.scrollTo(0, 0);
 };
 
 const shareViaWebShare = () => {
